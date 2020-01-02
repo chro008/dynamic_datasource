@@ -1,0 +1,15 @@
+CREATE DATABASE
+IF
+	NOT EXISTS yyfx_dynamic_datasource DEFAULT CHARACTER
+	SET utf8mb4 DEFAULT COLLATE utf8mb4_unicode_ci;
+
+USE yyfx_dynamic_datasource;
+
+CREATE TABLE
+IF
+	NOT EXISTS user_test (
+	`id` INT ( 3 ) auto_increment,
+	`name` VARCHAR ( 50 ) NOT NULL DEFAULT '',
+	`age` INT ( 3 ) NOT NULL DEFAULT - 1,
+	PRIMARY KEY ( id )
+	) ENGINE = INNODB DEFAULT CHARSET = utf8mb4;
